@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring C</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="utils\css\coursePage.css">
+    <link rel="stylesheet" href="utils\css\coursePageNav.css">
+</head>
+<body>
+    <div class="full">
+        <div class="navBar">
+            <div class="navLeft">
+                <span>Sharpsera</span>
+                <div class="searchBox">
+                    <input id="searchBox" type="text" placeholder="what do you want to learn?">
+                    <div class="searchBut"><i class='bx bx-search-alt'></i></div>
+                </div>
+            </div>
+            <div class="navRight">
+                <span>&#x1F310;</span>
+                <span>English</span>
+            </div>      
+        </div>
+        <div class="contentBody">
+            <div class="bodyLeft">
+                <div class="courseDet">
+                    <img id="courseImg" alt="utils\images\offeres\University of Michigan.png">
+                    <div id="courseTit"> C</div>
+                    <div id="courseOfferer"> of </div>
+                </div>
+                <div class="courseMaterial">
+                    <input type="checkbox" name="module" id="moduleOpen">
+                    <label for="moduleOpen">
+                        <div class="moduleTit">
+                            <i class='bx bxs-chevron-down'></i>
+                            <span>Course Material</span>
+                        </div>
+                    </label>
+                    <div id="moduleList">
+                       <!--  <div class="module moduleSelected">
+                            <i class='bx bxs-check-circle'></i>
+                            <div class="moduleName">Module 1</div>
+                        </div>
+                        <div class="module">
+                            <i class='bx bxs-check-circle'></i>
+                            <div class="moduleName">Module 1</div>
+                        </div>
+                        <div class="module">
+                            <i class='bx bxs-check-circle'></i>
+                            <div class="moduleName">Module 1</div>
+                        </div>
+                        <div class="module">
+                            <i class='bx bxs-check-circle'></i>
+                            <div class="moduleName">Module 1</div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="grades">Grades</div>
+            </div>
+            <div class="bodyRight">
+                <div class="outterBox">
+                    <input type="checkbox" id="outterBox">
+                    <label for="outterBox">
+                        <div class="mainTitBox">
+                            <i class='bx bxs-chevron-down'></i>
+                            <div class="mainTitText">Historical Content</div>
+                        </div>
+                    </label>
+                    <div class="dummy">
+                        <div class="left">
+                            <i class='bx bxl-youtube'></i>
+                            All videos completed
+                        </div>
+                        <div class="right">
+                            <i class='bx bx-book-reader'></i>
+                            All readings completed
+                        </div>
+                    </div>
+                    <div id="innerListCon">
+                        <!-- <div class="innerBox">
+                            <input type="checkbox" id="innerBox1">
+                            <label for="innerBox1">
+                                <div class="titBox">
+                                    <i class='bx bxs-chevron-down'></i>
+                                    Lecture
+                                </div>
+                            </label>
+                            <div class="innerBoxList">
+                                <a href="">
+                                    <div class="innerBoxContent">
+                                        <i class='bx bxs-check-circle'></i>
+                                        <div class="contentDet">
+                                            <div class="contentTit">Welcome to C Programming for Everybody</div>
+                                            <div class="contentDes">Video &bull; 2 min</div>
+                                        </div>
+                                    </div>
+                                </a>
+    
+                                <a href="">
+                                    <div class="innerBoxContent">
+                                        <i class='bx bxs-check-circle'></i>
+                                        <div class="contentDet">
+                                            <div class="contentTit">Welcome to C Programming for Everybody</div>
+                                            <div class="contentDes">Video &bull; 2 min</div>
+                                        </div>
+                                    </div>
+                                </a>
+    
+                               <a href="index.html">
+                                    <div class="innerBoxContent">
+                                        <i class='bx bxs-check-circle'></i>
+                                        <div class="contentDet">
+                                            <div class="contentTit">Welcome to C Programming for Everybody</div>
+                                            <div class="contentDes">Video &bull; 2 min</div>
+                                        </div>
+                                    </div>
+                               </a>
+                            </div>
+                        </div>
+                        <div class="innerBox">
+                            <input type="checkbox" id="innerBox2">
+                            <label for="innerBox2">
+                                <div class="titBox">
+                                    <i class='bx bxs-chevron-down'></i>
+                                    Lecture
+                                </div>
+                            </label>
+                            <div class="innerBoxList">
+                                <a href="">
+                                    <div class="innerBoxContent">
+                                        <i class='bx bxs-check-circle'></i>
+                                        <div class="contentDet">
+                                            <div class="contentTit">Welcome to C Programming for Everybody</div>
+                                            <div class="contentDes">Video &bull; 2 min</div>
+                                        </div>
+                                    </div>
+                                </a>
+    
+                                <a href="">
+                                    <div class="innerBoxContent">
+                                        <i class='bx bxs-check-circle'></i>
+                                        <div class="contentDet">
+                                            <div class="contentTit">Welcome to C Programming for Everybody</div>
+                                            <div class="contentDes">Video &bull; 2 min</div>
+                                        </div>
+                                    </div>
+                                </a>
+    
+                               <a href="index.html">
+                                    <div class="innerBoxContent">
+                                        <i class='bx bxs-check-circle'></i>
+                                        <div class="contentDet">
+                                            <div class="contentTit">Welcome to C Programming for Everybody</div>
+                                            <div class="contentDes">Video &bull; 2 min</div>
+                                        </div>
+                                    </div>
+                               </a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="utils\js\course.js"></script>
+    
+</body>
+</html>
