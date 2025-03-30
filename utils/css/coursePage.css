@@ -1,0 +1,225 @@
+.contentBody{
+    padding-left:3vw;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    flex-grow: 1;
+    height: calc(100vh - 70px);
+}
+:root{
+    --courseMaterialHeight:60px;
+    --outterBoxHeight:700px;
+}
+.bodyLeft{
+    width: 22vw;
+    border-right: 1px solid rgba(128, 127, 127, 0.616);
+    height: inherit;
+    /* background-color: aqua; */ 
+}
+.bodyLeft img{
+    height: 6vw;
+    width: 6vw;
+}
+.courseDet{
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.bodyLeft #courseTit{padding: 10px 0px 5px 0px;font-weight: 500;font-size: medium;}
+.bodyLeft #courseOfferer{color:rgba(45, 44, 44, 0.791);font-size:15px;}
+.bodyRight{
+    width: 75vw;
+    padding-block: 1rem;
+    height: inherit;
+    overflow-y: scroll;
+    /* background-color: aqua; */
+}
+.courseMaterial{
+    /* height: calc(50px + 3*45px + 10px); */
+    height: var(--courseMaterialHeight);
+    margin-top: 40px;
+    border-radius: 5px;
+    margin-right:2vw ;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+.courseMaterial span{
+    font-weight: 600;
+    padding-left: 1vw;
+    font-size: 1rem;
+}
+
+.courseMaterial:has(#moduleOpen:checked){
+    height: 50px;
+    border: 1px solid var(--border);
+}
+.courseMaterial:hover:has(#moduleOpen:checked),
+.courseMaterial:hover{
+    border: 1px solid var(--color);
+}
+.moduleTit{
+    height: 50px;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.moduleTit:hover{
+    background-color: #f1f6fe;
+    cursor: pointer;
+}
+.moduleTit i{
+    transition: all ease 0.2s;
+    font-size: larger;
+}
+.courseMaterial:has(#moduleOpen:checked) .moduleTit i{
+    transform: rotateZ(-90deg);
+    
+}
+    
+
+.module{
+    display: flex;
+    height:45px;
+    margin: 0 20px;
+    padding-left: 2vw;
+    /*padding: 10px 0px 10px 3vw ;
+   /*  background-color: bisque; */
+    align-items: center;
+    /* border-left:5px solid var(--color) */
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+    border-left:4px solid white;
+}
+.module i{
+    color: darkgreen;
+    font-size: 1.5rem;
+    margin-right: 1vw;
+}
+.module.moduleSelected{
+    border-left:4px solid var(--color);
+    background-color:  var(--hover);
+}
+
+.module:not(.moduleSelected):hover{
+    border-left:4px solid var(--hover);
+    background-color:var(--hover);
+    cursor: pointer;
+}
+
+
+.grades{
+    cursor: pointer;
+    margin-top: 40px;
+    font-weight: 600;
+    margin-left: 3vw;
+}
+.bodyRight .outterBox{
+    margin-left: 1vw;
+    height: var(--outterBoxHeight);
+    /* height: calc(620px + 4vw);  */
+    /* height: 740px; */
+    margin-top: 10px;
+    border:1px solid var(--border);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    
+}
+.bodyRight .outterBox .mainTitBox{
+    display: flex;
+    padding: 0px 1.5vw;
+    height: 60px;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+.bodyRight .outterBox .mainTitBox:hover{background-color: var(--hover);}
+.bodyRight .outterBox .mainTitBox i{padding-right: 1vw;}
+.outterBox:has(#outterBox:checked){height: 60px;}
+.bodyRight .outterBox .dummy{
+    height: 40px;
+    display: flex;
+    border-bottom: 1px solid var(--border);
+}
+.bodyRight .outterBox .dummy div{
+    padding-inline: 1vw;
+    padding-block: 10px;
+}
+.bodyRight .outterBox .dummy div:first-child{padding-left: 3vw;}
+.bodyRight .innerBox{
+    height: 50px;
+    transition: all ease 0.5s;
+    margin:2vw;
+    border: 1px solid #ffff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.bodyRight .innerBox:has(input[type="checkbox"]:checked){height: 50px;}
+.bodyRight .innerBox:has(input[type="checkbox"]) .titBox i{
+    padding-inline: 1vw;
+    transition: all 0.5s ease;}
+.bodyRight .innerBox:has(input[type="checkbox"]:checked) .titBox i{transform: rotate(-90deg);}
+.bodyRight .innerBox:has(input[type="checkbox"]:checked){border: 1px solid var(--border)}
+.bodyRight .innerBox:has(input[type="checkbox"]:checked):has(.titBox:hover),
+.bodyRight .innerBox:has(.titBox:hover){border: 1px solid var(--color);}
+.bodyRight .innerBox .titBox{
+    height: 50px;
+    line-height: 50px;
+    border-bottom:1px solid var(--border) ;
+    font-weight: 600;
+    cursor: pointer;
+} 
+.bodyRight .innerBox .titBox:hover{background-color: var(--hover);}
+.bodyRight .innerBox .innerBoxList{
+    margin: 1vw;
+    display: block;
+    transition: all 0.5s ease;
+}
+.bodyRight .innerBox:has(input[type="checkbox"]:checked) .innerBoxList{display: none;}
+
+.bodyRight .innerBox .innerBoxList .innerBoxContent{
+    height: 70px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.bodyRight .innerBox .innerBoxList .innerBoxContent:hover{background-color: var(--hover);}
+.bodyRight .innerBox .innerBoxList .innerBoxContent i{
+    color: darkgreen;
+    font-size:1.5rem;
+    padding-inline: 1vw;
+}
+.bodyRight .innerBox .innerBoxList .innerBoxContent .contentDes{color:  rgba(45, 44, 44, 0.791);font-size: small;}
+
+/* 
+::-webkit-scrollbar{
+    width: 5px;
+    
+    color:var(--color);
+}
+::-webkit-scrollbar-track-piece{
+    color: var(--color);
+}
+::-webkit-scrollbar-track{
+    color: var(--color);
+}
+ */
+
+
+
+.bodyRight .outterBox:hover{
+    border-color:var(--color);
+}
+
+
+
+input[type="checkbox"]{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

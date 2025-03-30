@@ -1,0 +1,287 @@
+WEBVTT
+
+1
+00:00:04.280 --> 00:00:07.110
+Welcome to C programming
+for everybody.
+
+2
+00:00:07.110 --> 00:00:08.400
+My name is Charles Severance and
+
+3
+00:00:08.400 --> 00:00:10.280
+I'm your instructor
+for this course.
+
+4
+00:00:10.280 --> 00:00:12.640
+This course and website
+is dedicated to
+
+5
+00:00:12.640 --> 00:00:15.040
+learning the classic version
+of C programming language
+
+6
+00:00:15.040 --> 00:00:17.000
+from the 1978 book
+
+7
+00:00:17.000 --> 00:00:20.240
+written by Brian W. Rigan
+and Dennis M. Ritchie.
+
+8
+00:00:20.240 --> 00:00:22.120
+This book places the reader in
+
+9
+00:00:22.120 --> 00:00:24.580
+the middle of the
+1970s transition from
+
+10
+00:00:24.580 --> 00:00:26.880
+a hardware centered
+computer science to
+
+11
+00:00:26.880 --> 00:00:30.040
+a focus on writing portable
+and efficient software.
+
+12
+00:00:30.040 --> 00:00:31.700
+C was used to develop
+
+13
+00:00:31.700 --> 00:00:34.840
+operating systems like
+Unix, Minix, and Linux.
+
+14
+00:00:34.840 --> 00:00:37.620
+Programming languages
+like Perl, Python,
+
+15
+00:00:37.620 --> 00:00:40.060
+Java and Javascript
+and ruby are all
+
+16
+00:00:40.060 --> 00:00:43.080
+written in C. Software
+like early TCPIP
+
+17
+00:00:43.080 --> 00:00:45.500
+networking stack implementations
+that made the Internet
+
+18
+00:00:45.500 --> 00:00:48.920
+possible were written in
+C. The first web browsers
+
+19
+00:00:48.920 --> 00:00:52.470
+and web servers were
+written in C. Writing
+
+20
+00:00:52.470 --> 00:00:54.000
+software and C enabled
+
+21
+00:00:54.000 --> 00:00:57.020
+major advances in computer
+architecture and performance.
+
+22
+00:00:57.020 --> 00:00:58.940
+Operating systems, compilers and
+
+23
+00:00:58.940 --> 00:01:00.900
+utilities could be
+recompiled to work on
+
+24
+00:01:00.900 --> 00:01:02.800
+a new hardware platform once we
+
+25
+00:01:02.800 --> 00:01:05.370
+had a C compiler for
+the new hardware.
+
+26
+00:01:05.370 --> 00:01:07.660
+Much software has been
+written in C over
+
+27
+00:01:07.660 --> 00:01:10.960
+the past 40 years that there's
+a very good chance that
+
+28
+00:01:10.960 --> 00:01:12.520
+much of the software
+that you use
+
+29
+00:01:12.520 --> 00:01:16.080
+every day was either
+written in C or written in
+
+30
+00:01:16.080 --> 00:01:18.160
+a programming language
+that was written in
+
+31
+00:01:18.160 --> 00:01:20.820
+C. We study C less as
+
+32
+00:01:20.820 --> 00:01:23.240
+a programming language to
+use on a daily basis and
+
+33
+00:01:23.240 --> 00:01:26.480
+more as the foundation of
+modern software and computing.
+
+34
+00:01:26.480 --> 00:01:28.920
+In many ways, C
+is the technology
+
+35
+00:01:28.920 --> 00:01:31.120
+equivalent of the
+Rosetta Stone in that it
+
+36
+00:01:31.120 --> 00:01:33.580
+provides a connection between
+the programming languages
+
+37
+00:01:33.580 --> 00:01:36.780
+of the past and the programming
+languages of the present.
+
+38
+00:01:36.780 --> 00:01:39.270
+The name CC4E and
+
+39
+00:01:39.270 --> 00:01:44.785
+www.cc4e.com refers to the
+original Unix command CC,
+
+40
+00:01:44.785 --> 00:01:46.280
+which was the command that
+
+41
+00:01:46.280 --> 00:01:48.345
+you used to compile
+your C program.
+
+42
+00:01:48.345 --> 00:01:52.000
+CC stood for C compiler
+and it is featured
+
+43
+00:01:52.000 --> 00:01:55.800
+on the first page of the first
+chapter of the KNRC book.
+
+44
+00:01:55.800 --> 00:01:59.240
+Programmers like me from
+the 1970s and 1980s
+
+45
+00:01:59.240 --> 00:02:03.820
+Tite CC on Unix systems
+like the ATNT3B2 to
+
+46
+00:02:03.820 --> 00:02:06.900
+compile and run their
+first Hello World program
+
+47
+00:02:06.900 --> 00:02:09.500
+in C. This material is being
+
+48
+00:02:09.500 --> 00:02:10.800
+presented under fair use
+
+49
+00:02:10.800 --> 00:02:12.360
+as we are making use
+of material from
+
+50
+00:02:12.360 --> 00:02:14.080
+a copyrighted work
+that is out of print
+
+51
+00:02:14.080 --> 00:02:16.220
+and not broadly
+available in any format.
+
+52
+00:02:16.220 --> 00:02:19.320
+The book is also not available
+in any accessible format.
+
+53
+00:02:19.320 --> 00:02:21.080
+We are making use
+of this material
+
+54
+00:02:21.080 --> 00:02:22.700
+in a teaching and
+research context
+
+55
+00:02:22.700 --> 00:02:24.020
+with a focus on studying
+
+56
+00:02:24.020 --> 00:02:26.585
+its contribution to
+computing history.
+
+57
+00:02:26.585 --> 00:02:28.690
+The materials available for free
+
+58
+00:02:28.690 --> 00:02:30.710
+and online to anyone who
+wants to learn about
+
+59
+00:02:30.710 --> 00:02:32.970
+the history of the C
+language computing and
+
+60
+00:02:32.970 --> 00:02:36.950
+computer architecture.
+Welcome to the course.

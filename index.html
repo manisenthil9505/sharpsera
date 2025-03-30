@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharpsera</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="utils\css\style.css">
+    <link rel="stylesheet" href="utils\css\nav.css">
+</head>
+<body>
+    <div class="full">
+        <div class="navBar">
+            <div class="navTop">
+                <div class="navLeft">
+                    <span>Sharpser</span>
+                    <div class="searchBox">
+                        <input id="searchBox" type="text" placeholder="what do you want to learn?">
+                        <div class="searchBut"><i class='bx bx-search-alt'></i></div>
+                    </div>
+                </div>
+                <div class="navRight">
+                    <span>&#x1F310;</span>
+                    <span>English</span>
+                </div>
+            </div>            
+            <ul class="navBot">
+                <li class="pageSelected" onclick="selectPage(0,event)">Home</li>
+                <li onclick="selectPage(1,event)">Learning</li>
+            </ul>
+        
+        </div>
+        <div class="body">
+            <div class="courseBox">
+                <div class="CBoxLeft">
+                    <img src="utils\images\offeres\University of Michigan.png" alt="utils\images\offeres\University of Michigan.png">
+                    <div class="column">
+                        <div class="text">Course | University of Michigan</div>
+                        <div class="title">Exploring C</div>
+                    </div>
+                </div>
+                <a href="coursePage.html?course=0" class="CBoxRight">
+                    <div class="openBut">Enter-></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="addBut">
+            <div>+</div>
+        </div>
+    </div>
+    <script src="utils\js\script.js"></script>
+</body>
+</html>

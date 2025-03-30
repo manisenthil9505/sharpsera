@@ -1,0 +1,89 @@
+.addBut{
+   height: fit-content;
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   border-radius:100%;
+   padding: 15px;
+   font-weight: 500;
+   font-size: xx-large;
+   color: #ffff;
+   background-color: var(--color);
+}
+.addBut div{
+   height: 2rem;
+   width: 2rem;
+}
+.body{
+   padding: 20px;
+}
+.courseBox{
+   width: 45vw;   
+   padding: 20px;
+   box-shadow: 0 0 1px black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 5px;
+}
+.CBoxLeft{
+   display: flex;
+}
+.CBoxLeft img{
+   height: 100px;
+   width: 100px;
+   background-color: #0056D2;
+   margin-right: 20px;
+}
+.CBoxLeft .column .text{
+   font-size: smaller;
+   color: grey;
+}
+.CBoxLeft .column .title{
+   padding-top: 10px ;
+   color: #0056D2;
+   font-size: xx-large;
+   font-weight: 600;
+}
+.CBoxRight{
+   background-color: #0056D2;
+   height: fit-content;
+   color: white;
+   font-size: large;
+   padding: 15px 25px;
+   border-radius: 5px;
+   cursor: pointer;
+   text-decoration: none;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======Center============*/
+.CBoxRight,
+.addBut div,
+.searchBut{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
